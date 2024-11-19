@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/11.0.1/firebase-app-compat.js"></script>
+    <script defer src="/__/firebase/11.0.1/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/11.0.1/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/11.0.1/firebase-firestore-compat.js"></script>
+
+    <!-- initilized firebase object -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <title>Title</title>
+</head>
+<body>
+    <h3>Carga de datos</h3>
+    <div>
+        <label for="txtCSV">Filename:</label>
+        <input type="file" name="txtCSV" id="txtCSV">
+        <br> <br>
+
+        <input type="button" name="btnLoad" id="btnLoad" value="Subir archivo" />
+    </div>
+
+    <!-- load js code to storage data  -->
+    <script defer src="js/support/bc_csvToCollection.js"></script>
+</body>
+</html>
